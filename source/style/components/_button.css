@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 900;
+  @mixin no-decor;
+}

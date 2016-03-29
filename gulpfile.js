@@ -19,22 +19,20 @@ var gulp = require('gulp'),
   reload = browserSync.reload,
   sourcemaps = require('gulp-sourcemaps'),
   postcss = require('gulp-postcss'),
-  autoprefixer = require('autoprefixer'),
   precss = require('precss'),
-  mqpacker = require('css-mqpacker'),
-  cssnext = require('cssnext');
+  mqpacker = require('css-mqpacker');
 
 gulp.task('default', ['watch', 'browserSync', 'css', 'html', 'js', 'image']);
 
 gulp.task('css', function () {
   var processors = [
         precss,
-        autoprefixer({
-      browsers: ['last 3 version']
-    }),
-        cssnext,
+        require('postcss-custom-media')(),
         require('postcss-sorting')({
       'sort-order': 'csscomb'
+    }),
+        require("postcss-cssnext")({
+      browsers: ['last 3 version']
     }),
         require('postcss-short')({}),
         mqpacker({
@@ -42,8 +40,9 @@ gulp.task('css', function () {
     }),
     require("csswring")()
     ];
-  return gulp.src('./source/style/style.css')
+  gulp.src('./source/style/style.css')
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/style'))
@@ -54,7 +53,6 @@ gulp.task('css', function () {
 
 gulp.task('html', function () {
   return gulp.src('source/*.html')
-    .pipe(changed('build/'))
     .pipe(rigger())
     .pipe(htmlmin({
       collapseWhitespace: true
@@ -140,6 +138,11 @@ gulp.task('clean', function () {
 gulp.task('deploy', function () {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
+});
+
+gulp.task('copy', function () {
+  gulp.src('source/fonts/**/*.*')
+    .pipe(gulp.dest('./build/fonts/'));
 });
 
 gulp.task('watch', function () {

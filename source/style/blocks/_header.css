@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  background: url('../img/header-bg.jpg') center;
+  background-size: cover;
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #222533;
+    top: 0;
+    left: 0;
+    size: 100%;
+    opacity: .4;
+  }
+  &__wrapper {
+    @mixin container;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  &__logo {
+    margin-top: 15px;
+    width: 150px;
+    height: auto;
+    p {
+      margin: 0;
+      font-family: "BebasNeue";
+      font-size: 48px;
+      text-transform: uppercase;
+      color: $color-red;
+      opacity: 0.8;
+    }
+    span {
+      font-family: "BebasNeueBook";
+      font-size: 36px;
+    }
+  }
+}

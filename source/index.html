@@ -12,7 +12,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ["Open Sans:300,400", "Oswald:400,700"]
+        families: ["Open Sans:300,400,700", "lato:400,700,900"]
       }
     });
   </script>
@@ -23,7 +23,240 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <p>Brad<span>ly</span></p>
+      </div>
+      <nav class="menu">
+        <button class="menu__toggle  menu__toggle--closed" type="button">Открыть меню</button>
+        <ul class="menu__list  menu__list--closed">
+          <li class="menu__item  menu__item--active">
+            <a class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Shop</a>
+          </li>
+          <li class="menu__item  menu__item--none ">
+            <a class="menu__link" href="">Brands</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Blog</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="peppermint peppermint-inactive" id="peppermint">
+      <figure>
+        <p class="peppermint__item  peppermint__item--textUp">Spring / Summer Collection</p>
+        <h1>Up to 60% discount on new arrivals</h1>
+        <p class="peppermint__item">Trending new items, from creators around the world</p>
+        <a class="btn" href="">Shop Now</a>
+      </figure>
+      <figure>
+        <p class="peppermint__item  peppermint__item--textUp">Summer/ Autumn Collection</p>
+        <h1>Up to 55% discount on new arrivals</h1>
+        <p class="peppermint__item">Trending new items, from creators around the world</p>
+        <a class="btn" href="">Shop Now</a>
+      </figure>
+      <figure>
+        <p class="peppermint__item  peppermint__item--textUp">Autumn / Winner Collection</p>
+        <h1>Up to 45% discount on new arrivals</h1>
+        <p class="peppermint__item">Trending new items, from creators around the world</p>
+        <a class="btn" href="">Shop Now</a>
+      </figure>
+    </div>
+  </header>
+  <section class="products">
+    <div class="products__wrapper">
+      <h2 class="products__title">Latest Products</h2>
+      <div class="products__items">
+        <div class="products__item">
+          <p>Man</p>
+        </div>
+        <div class="products__item">
+          <p>Woman</p>
+        </div>
+        <div class="products__item">
+          <p>Watches</p>
+        </div>
+        <div class="products__item">
+          <p>40% Off
+            <br> New Autumn
+            <br> Collection
+          </p>
+        </div>
+        <div class="products__item">
+          <p>Mega sale
+            <br> on items from
+            <br> spirit collection</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="items">
+    <div class="items__wrapper">
+      <h2 class="items__title">Trending Items</h2>
+      <div class="peppermint peppermint-inactive" id="peppermint2">
+        <figure>
+          <div class="items__img">
+            <img src="http://placehold.it/67x56" alt="img" width="67" height="56">
+          </div>
+          <h3>NATHAN STEWART JACKET</h3>
+          <p class="slider__item-textUp  slider__item-textUp--items">Spring / Summer Collection</p>
 
+          <p>Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it’s simle style. Simple lines,lovely texture,it suits almost everybody. It comes in six different colors,and all sizes. </p>
+          <h4>FASHION TIP: </h4>
+          <p>With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+          <input type="radio" name="sizes" value="M" id="M">
+          <input type="radio" name="sizes" value="L" id="L">
+          <input type="radio" name="sizes" value="XL" id="XL">
+          <input type="radio" name="sizes" value="XXL" id="XXL">
+          <div class="items__control">
+            <label class="items__control-btn" for="M"></label>
+            <label class="items__control-btn" for="L"></label>
+            <label class="items__control-btn" for="XL"></label>
+            <label class="items__control-btn" for="XXL"></label>
+          </div>
+          <a class="btn" href="">Shop Now</a>
+          <a class="btn" href="">SIZE GUIDE</a>
+        </figure>
+        <figure>
+          <div class="items__img">
+            <img src="http://placehold.it/67x56" alt="img" width="67" height="56">
+          </div>
+          <h3>NATHAN STEWART JACKET</h3>
+          <p class="slider__item-textUp  slider__item-textUp--items">Spring / Summer Collection</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, odit incidunt distinctio autem necessitatibus iure, sapiente, minima ipsum molestiae ipsa maiores. Non fugit omnis quas.</p>
+          <h4>FASHION TIP: </h4>
+          <p>With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+          <input type="radio" name="sizes" value="M" id="M">
+          <input type="radio" name="sizes" value="L" id="L">
+          <input type="radio" name="sizes" value="XL" id="XL">
+          <input type="radio" name="sizes" value="XXL" id="XXL">
+          <div class="items__control">
+            <label class="items__control-btn" for="M"></label>
+            <label class="items__control-btn" for="L"></label>
+            <label class="items__control-btn" for="XL"></label>
+            <label class="items__control-btn" for="XXL"></label>
+          </div>
+          <a class="btn" href="">Shop Now</a>
+          <a class="btn" href="">SIZE GUIDE</a>
+        </figure>
+        <figure>
+          <div class="items__img">
+            <img src="http://placehold.it/67x56" alt="img" width="67" height="56">
+          </div>
+          <h3>NATHAN STEWART JACKET</h3>
+          <p class="slider__item-textUp  slider__item-textUp--items">Spring / Summer Collection</p>
+
+          <p>Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it’s simle style. Simple lines,lovely texture,it suits almost everybody. It comes in six different colors,and all sizes. </p>
+          <h4>FASHION TIP: </h4>
+          <p>With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+          <input type="radio" name="sizes" value="M" id="M">
+          <input type="radio" name="sizes" value="L" id="L">
+          <input type="radio" name="sizes" value="XL" id="XL">
+          <input type="radio" name="sizes" value="XXL" id="XXL">
+          <div class="items__control">
+            <label class="items__control-btn" for="M"></label>
+            <label class="items__control-btn" for="L"></label>
+            <label class="items__control-btn" for="XL"></label>
+            <label class="items__control-btn" for="XXL"></label>
+          </div>
+          <a class="btn" href="">Shop Now</a>
+          <a class="btn" href="">SIZE GUIDE</a>
+        </figure>
+        <figure>
+          <div class="items__img">
+            <img src="http://placehold.it/570x570" alt="img" width="570" height="570">
+          </div>
+          <h3>NATHAN STEWART JACKET</h3>
+          <p class="slider__item-textUp  slider__item-textUp--items">Spring / Summer Collection</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quidem dicta, ex, eos sapiente similique consequuntur asperiores expedita, a quia laudantium impedit sit natus facilis fuga laboriosam ipsum. Odio, culpa. </p>
+          <h4>FASHION TIP: </h4>
+          <p>With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
+          <input type="radio" name="sizes" value="M" id="M">
+          <input type="radio" name="sizes" value="L" id="L">
+          <input type="radio" name="sizes" value="XL" id="XL">
+          <input type="radio" name="sizes" value="XXL" id="XXL">
+          <div class="items__control">
+            <label class="items__control-btn" for="M"></label>
+            <label class="items__control-btn" for="L"></label>
+            <label class="items__control-btn" for="XL"></label>
+            <label class="items__control-btn" for="XXL"></label>
+          </div>
+          <a class="btn" href="">Shop Now</a>
+          <a class="btn" href="">SIZE GUIDE</a>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="blog__wrapper">
+      <h2 class="blog__title">From The Blog</h2>
+      <div class="slider">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <symbol id="review-arrow-left" viewBox="0 0 21.706 41.719">
+            <path d="M2.045 20.86L21.458 1.445c.33-.33.33-.867 0-1.198-.33-.33-.867-.33-1.197 0L.25 20.26c-.33.33-.33.868 0 1.198L20.26 41.47c.165.166.383.25.6.25s.434-.084.6-.25c.33-.33.33-.866 0-1.197L2.044 20.86z" />
+          </symbol>
+          <symbol id="review-arrow-right" viewBox="0 0 21.706 41.719">
+            <path d="M19.66 20.86L.25 1.445c-.33-.33-.33-.867 0-1.198.33-.33.867-.33 1.197 0L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.47c-.164.166-.382.25-.6.25s-.433-.084-.598-.25c-.33-.33-.33-.866 0-1.197L19.66 20.86z" />
+          </symbol>
+        </svg>
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__img">
+              <img src="http://placehold.it/570x400" alt="img" width="570" height="400">
+            </div>
+            <h3>GERMAN FASHION WIZARDS</h3>
+            <p>Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+            <a class="btn" href="">Read more</a>
+          </div>
+          <div class="slider__item">
+            <div class="slider__img">
+              <img src="http://placehold.it/570x400" alt="img" width="570" height="400">
+            </div>
+            <h3>ANNE STEWART’S SUNGLASSES</h3>
+            <p>This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection.</p>
+            <a class="btn" href="">Read more</a>
+          </div>
+          <div class="slider__item">
+            <div class="slider__img">
+              <img src="http://placehold.it/570x400" alt="img" width="570" height="400">
+            </div>
+            <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участияучастия.</p>
+            <a class="btn" href="">Read more</a>
+          </div>
+        </div>
+        <svg class="slider__arrow slider__arrow--left">
+          <use xlink:href="#review-arrow-left"></use>
+        </svg>
+        <svg class="slider__arrow slider__arrow--right">
+          <use xlink:href="#review-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe">
+    <div class="subscribe__wrapper">
+      <h2>SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS</h2>
+      <form action="" method="post">
+        <input type="email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    Made with by WebDonut.net
+  </footer>
   <script src="js/script.js"></script>
 </body>
 

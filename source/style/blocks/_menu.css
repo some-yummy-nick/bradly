@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  min-height: 20px;
+  flex-grow: 1;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: flex-end;
+    @mixin no-list;
+  }
+  &__item {
+    @mixin margin 50px;
+  }
+  &__link {
+    color: #fff;
+    font-size: 18px;
+  }
+  &__toggle {
+    &--closed {
+      display: none;
+    }
+  }
+  @media (--tablet-widths) {
+    &__toggle {
+      display: none;
+    }
+  }
+  @media(--mobile-widths-only) {
+    &__list {
+      &--closed {
+        display: none;
+      }
+    }
+  }
+}

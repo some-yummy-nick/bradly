@@ -1,4 +1,10 @@
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'base/normalize';
-@import 'base/base';
+@import "base/normalize";
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/fonts";
+@import "base/base";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/peppermint";
+@import "blocks/slider";
+@import "components/button";
