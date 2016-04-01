@@ -1,0 +1,50 @@
+.subscribe {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background: url("../img/subscribe-bg.jpg");
+  h2 {
+    color: #fff;
+    font-weight: 300;
+  }
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    size: 100%;
+    opacity: 0.7;
+    background-color: #222533;
+  }
+  &__wrapper {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+    @mixin container;
+    form {
+      @mixin clearfix;
+    }
+    input {
+      float: left;
+      width: 771px;
+      height: 51px;
+      padding-left: 50px;
+      background: transparent;
+      outline: none;
+      border: 1px solid #fff;
+    }
+    button {
+      width: 270px;
+      height: 51px;
+      background-color: #fff;
+      float: right;
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
