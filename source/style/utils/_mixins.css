@@ -54,3 +54,29 @@
     margin-right: 0;
   }
 }
+
+@define-mixin title {
+  position: relative;
+  margin-bottom: 60px;
+  color: #333;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: italic;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-red;
+  }
+  &:before {
+    top: -10px;
+  }
+  &:after {
+    bottom: -15px;
+  }
+}

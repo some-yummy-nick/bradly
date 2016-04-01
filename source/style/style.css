@@ -8,3 +8,8 @@
 @import "blocks/peppermint";
 @import "blocks/slider";
 @import "components/button";
+@import "blocks/products";
+@import "blocks/items";
+@import "blocks/blog";
+@import "blocks/subscribe";
+@import "blocks/footer";

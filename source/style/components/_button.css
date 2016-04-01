@@ -11,4 +11,28 @@
   font-size: 18px;
   font-weight: 900;
   @mixin no-decor;
+  &--items {
+    @mixin inline-block;
+    @mixin margin 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-width: 1px;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 700;
+    border-color: #333;
+  }
+  &--slider {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-left: 0;
+    border-width: 1px;
+    color: #333;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 700;
+    border-color: #333;
+  }
 }

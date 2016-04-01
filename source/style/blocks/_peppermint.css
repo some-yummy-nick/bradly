@@ -76,10 +76,29 @@
       letter-spacing: 10px;
     }
   }
+  &--items {
+    margin-top: 0;
+    .peppermint-dots {
+      margin-top: 30px !important;
+    }
+    ul.peppermint-dots > li > span {
+      size: 12px;
+      background: #333;
+      opacity: 0.54;
+    }
+    ul.peppermint-dots > li.peppermint-active-dot > span {
+      size: 12px;
+      top: 21px;
+      border-color: $color-red;
+      border-width: 2px;
+      opacity: 1;
+    }
+  }
 }
 
 .peppermint figure {
   margin: 0 0 1.5em 0;
+  width: 100%;
 }
 
 .peppermint.peppermint-active {
@@ -141,16 +160,18 @@ ul.peppermint-dots > li > span {
   top: 50%;
   left: 50%;
   margin: -4px 0 0 -4px;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: #9b9890;
+  background: #fff;
 }
 
 ul.peppermint-dots > li.peppermint-active-dot > span {
   margin: -6px 0 0 -6px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #9b9890;
+  width: 12px;
+  height: 12px;
+  top: 21px;
+  left: 10px;
+  border: 2px solid #fff;
   background: transparent;
 }

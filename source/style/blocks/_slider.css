@@ -1,14 +1,29 @@
   .slider {
+    width: 100%;
+    height: 700px;
+    margin: auto;
     position: relative;
+    text-align: center;
     &__inner {
-      width: 90%;
-      height: 600px;
+      width: 100%;
+      height: 700px;
+      margin: auto;
       overflow: hidden;
-      background: gray;
     }
     &__item {
-      width: 70%;
-      height: 600px;
+      height: 700px;
+      font-size: 0;
+    }
+    &__block {
+      text-align: left;
+      width: 50%;
+      margin: auto;
+      @mixin inline-block;
+      color: #333;
+      font-family: OpenSans;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 24px;
     }
     &__arrow {
       display: block;
@@ -17,15 +32,15 @@
       margin-right: 80px;
       width: 22px;
       height: 42px;
-      top: 50%;
+      top: 25%;
       opacity: 0.3;
       cursor: pointer;
       fill: purple;
       &--left {
-        left: 0;
+        left: -105px;
       }
       &--right {
-        right: 0;
+        right: -100px;
       }
       &:hover {
         opacity: 0.6;
@@ -33,5 +48,12 @@
       &:active {
         opacity: 0.1;
       }
+    }
+    h3 {
+      color: $color-red;
+      font-family: Lato;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 30px;
     }
   }
